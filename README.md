@@ -4,12 +4,11 @@ Sample project to practice (Rxjava - Dagger2 - MVP)
 mulhim is an Arabic website to inspire artistes and creative people.
 
 
-<img src="images/device-2017-02-17-105917.png" width="50%" />
-<img src="images/device-2017-02-17-105955.png" width="50%" />
-<img src="images/device-2017-02-17-110326.png" width="50%" />
-<img src="images/device-2017-02-17-110403.png" width="50%" />
-<img src="images/device-2017-02-17-110623.png" width="50%" />
-<img src="images/device-2017-02-17-110656.png" width="50%" />
+<img src="images/device-2017-02-17-105917.png" width="25%" />
+<img src="images/device-2017-02-17-105955.png" width="25%" />
+<img src="images/device-2017-02-17-110326.png" width="25%" />
+<img src="images/device-2017-02-17-110403.png" width="25%" />
+<img src="images/device-2017-02-17-110656.png" width="25%" />
 
 - Support libraries
 - RecyclerViews and CardViews 

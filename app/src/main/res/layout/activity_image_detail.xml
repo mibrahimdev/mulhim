@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/mulhim_toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/mulhim_shared_elemet"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <uk.co.senab.photoview.PhotoView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:background="@color/material_grey_200"
+                android:transitionName="@string/mulhim_shared_elemet"
+                tools:targetApi="lollipop"/>
+
+            <TextView
+                android:id="@+id/image_title"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/material_component_cards_left_and_right_padding"
+                android:paddingRight="@dimen/material_component_cards_left_and_right_padding"
+                android:paddingTop="@dimen/material_component_cards_top_and_bottom_padding"
+                android:text="title"
+                android:textColor="@color/material_light_white"/>
+
+            <TextView
+                android:id="@+id/image_author"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/material_component_cards_top_and_bottom_padding"
+                android:paddingLeft="@dimen/material_component_cards_left_and_right_padding"
+                android:paddingRight="@dimen/material_component_cards_left_and_right_padding"
+                android:text="image author"
+                android:textColor="@color/material_light_white"
+                android:textDirection="anyRtl"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

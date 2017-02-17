@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/mulhim_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+            android:paddingLeft="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+            android:paddingRight="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+            android:paddingTop="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+            />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

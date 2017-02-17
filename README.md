@@ -1,7 +1,7 @@
 # mulhim
 Sample project to practice (Rxjava - Dagger2 - MVP)
 
-mulhim is an Arabic website to inspire artistes and creative people.
+mulhim is an Arabic website to inspire artists and creative people.
 
 
 <img src="images/device-2017-02-17-105917.png" width="25%" />

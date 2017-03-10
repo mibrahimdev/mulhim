@@ -82,6 +82,7 @@ public interface MulhimService {
                     .baseUrl(MulhimService.ENDPOINT)
                     .client(Creator.getOkHttpClientWithCache(appContext))
                     .addConverterFactory(GsonConverterFactory.create())
+                    .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .build();
             return retrofit.create(MulhimService.class);
         }
@@ -94,9 +95,9 @@ public interface MulhimService {
             int cacheSize = 20 * 1024 * 1024; // 20 MiB
             return new OkHttpClient.Builder()
                     .cache(new Cache(appContext.getCacheDir(), cacheSize))
-                    .addNetworkInterceptor(new RemoveHeadersInterceptor())
+                    //.addNetworkInterceptor(new RemoveHeadersInterceptor())
                     .addNetworkInterceptor(new CacheInterceptor())
-                    .addNetworkInterceptor(new OfflineCacheInterceptor())
+                    //.addNetworkInterceptor(new OfflineCacheInterceptor())
                     .addInterceptor(logging)
                     .build();
         }

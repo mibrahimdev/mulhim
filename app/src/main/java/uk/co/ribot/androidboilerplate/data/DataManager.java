@@ -23,8 +23,10 @@ import uk.co.ribot.androidboilerplate.data.remote.MulhimService;
 @Singleton
 public class DataManager {
 
+    //to get cache client you can setup a whole new service with Okhttp caching 
     private final MulhimService mMulhimService;
     private final MulhimService mMulhimServiceWithCache;
+
     private final DatabaseHelper mDatabaseHelper;
     private final PreferencesHelper mPreferencesHelper;
 
@@ -56,11 +58,11 @@ public class DataManager {
 
 
     public Observable<List<Image>> getImages(double count) {
-        return mMulhimService.getImages(count);
+        return mMulhimServiceWithCache.getImages(count);
     }
 
     public Observable<ImageDetails> getImageDetails(String imageID) {
-        return mMulhimService.getImageDetails(imageID);
+        return mMulhimServiceWithCache.getImageDetails(imageID);
     }
 
     @RxLogObservable()

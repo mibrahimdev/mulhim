@@ -3,7 +3,6 @@ package uk.co.ribot.androidboilerplate.injection.component;
 import dagger.Component;
 import uk.co.ribot.androidboilerplate.injection.ConfigPersistent;
 import uk.co.ribot.androidboilerplate.injection.module.ActivityModule;
-import uk.co.ribot.androidboilerplate.ui.base.BaseActivity;
 
 /**
  * A dagger component that will live during the lifecycle of an Activity but it won't

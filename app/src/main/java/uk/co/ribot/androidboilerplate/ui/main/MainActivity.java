@@ -10,16 +10,12 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
-
-import com.afollestad.materialdialogs.MaterialDialog;
-
-import java.util.Collections;
-import java.util.List;
-
-import javax.inject.Inject;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.afollestad.materialdialogs.MaterialDialog;
+import java.util.Collections;
+import java.util.List;
+import javax.inject.Inject;
 import uk.co.ribot.androidboilerplate.R;
 import uk.co.ribot.androidboilerplate.data.model.PerfectImage;
 import uk.co.ribot.androidboilerplate.ui.base.BaseActivity;

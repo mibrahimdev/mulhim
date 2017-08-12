@@ -18,8 +18,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import uk.co.ribot.androidboilerplate.R;
 import uk.co.ribot.androidboilerplate.data.model.PerfectImage;
-import uk.co.ribot.androidboilerplate.ui.base.BaseActivity;
-
 
 public class ImageDetailsActivity extends BaseActivity implements ImageDetailsMvpView {
 
